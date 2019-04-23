@@ -47,7 +47,9 @@ console.log(mySchool.getName());
 console.log(mySchool.getLocation());
 
 console.log();
+
 // extendsget
+// Marketing School
 class MarketingSchool extends School {
   constructor({ owner, name, location, method, price }) {
     super(owner, name, location);
@@ -76,12 +78,72 @@ class MarketingSchool extends School {
   }
 }
 
-const bestSchool = new MarketingSchool({
+const bestMarketingSchool = new MarketingSchool({
   owner: "Pakde",
   name: "SEO Max",
   location: "Jakarta",
   method: "Bootcamp",
-  price: "1000"
+  price: "10000000"
 });
 
-console.log(bestSchool);
+console.log(bestMarketingSchool);
+
+console.log();
+// ArmySchool
+class ArmySchool extends School {
+  constructor({ owner, name, location, method, price }) {
+    super(owner, name, location);
+    this.method = method;
+    this.price = price;
+  }
+}
+
+const bestArmySchool = new ArmySchool({
+  owner: "Rambo",
+  name: "SWAT Academy",
+  location: "Sahara Desert",
+  method: "Boarding School",
+  price: "50000000"
+});
+
+console.log(bestArmySchool);
+
+console.log();
+// CookingSchool
+class CookingSchool extends School {
+  constructor({ owner, name, location, method, price }) {
+    super(owner, name, location);
+    this.method = method;
+    this.price = price;
+  }
+}
+
+const bestCookingSchool = new CookingSchool({
+  owner: "Gordon Ramsay",
+  name: "Master Class",
+  location: "Bali",
+  method: "Boarding School",
+  price: "15000000"
+});
+
+console.log(bestCookingSchool);
+
+console.log();
+// Music School
+class MusicSchool extends School {
+  constructor({ owner, name, location, method, price }) {
+    super(owner, name, location);
+    this.method = method;
+    this.price = price;
+  }
+}
+
+const bestMusicSchool = new MusicSchool({
+  owner: "Lawrence Berk",
+  name: "Berklee College of Music",
+  location: "Boston",
+  method: "Academy",
+  price: "750000000"
+});
+
+console.log(bestCookingSchool);
