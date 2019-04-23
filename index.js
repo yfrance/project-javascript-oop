@@ -47,7 +47,7 @@ console.log(mySchool.getName());
 console.log(mySchool.getLocation());
 
 console.log();
-// extends
+// extendsget
 class MarketingSchool extends School {
   constructor({ owner, name, location, method, price }) {
     super(owner, name, location);
@@ -56,7 +56,7 @@ class MarketingSchool extends School {
   }
 
   // get method
-  getmethod() {
+  getMethod() {
     return this.method;
   }
 
