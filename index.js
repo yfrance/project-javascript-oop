@@ -10,9 +10,9 @@ class School {
     this.location = location;
   }
 
-  schoolMap() {
+  showDetail() {
     console.log(
-      `The ${this.name} school owned by ${this.name} and located at ${
+      `The ${this.name} school owned by ${this.owner} and located at ${
         this.location
       } city.`
     );
@@ -37,7 +37,7 @@ console.log(mySchool);
 
 console.log();
 // console
-mySchool.schoolMap();
+mySchool.showDetail();
 
 console.log();
 console.log(mySchool.getOwner());
@@ -49,17 +49,15 @@ console.log(mySchool.getLocation());
 console.log();
 // extends
 class MarketingSchool extends School {
-  constructor({ owner, name, location, metode, price }) {
-    super(owner, name);
-    this.name = name;
-    this.location;
-    this.metode = metode;
+  constructor({ owner, name, location, method, price }) {
+    super(owner, name, location);
+    this.method = method;
     this.price = price;
   }
 
-  // get metode
-  getMetode() {
-    return this.metode;
+  // get method
+  getmethod() {
+    return this.method;
   }
 
   // get price
@@ -82,7 +80,7 @@ const bestSchool = new MarketingSchool({
   owner: "Pakde",
   name: "SEO Max",
   location: "Jakarta",
-  metode: "Bootcamp",
+  method: "Bootcamp",
   price: "1000"
 });
 
